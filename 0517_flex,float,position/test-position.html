@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout</title>
+  <style>
+  .wrapper{width:800px; height: 800px; position:relative; margin: 0 auto;}
+  .wrapper div{width:200px; height: 200px; position: absolute; line-height: 200px; text-align:center;}
+  /* color */
+  .wrapper div:nth-child(4n+1){background:#888}
+  .wrapper div:nth-child(4n+2){background:#aaa}
+  .wrapper div:nth-child(4n+3){background:#ccc}
+  .wrapper div:nth-child(4n){background:#eee}
+  /* align */
+  .wrapper div:nth-child(1){top: 0; right: 0;}
+  .wrapper div:nth-child(2){top: 200px; right: 0;}
+  .wrapper div:nth-child(3){top: 400px; right: 0;}
+  .wrapper div:nth-child(4){top: 600px; right: 0;}
+  .wrapper div:nth-child(5){top: 0; left: 200px;}
+  .wrapper div:nth-child(6){top: 0; left: 400px;}
+  .wrapper div:nth-child(7){top: 200px; left: 200px;}
+  .wrapper div:nth-child(8){top: 200px; left: 400px;}
+  .wrapper div:nth-child(9){top: 400px; left: 400px; background: #888;}
+  .wrapper div:nth-child(10){top: 600px; left: 400px; background: #aaa;}
+  .wrapper div:nth-child(11){top: 400px; left: 200px; background: #888;}
+  .wrapper div:nth-child(12){top: 600px; left: 200px; background: #aaa;}
+  .wrapper div:nth-child(13){top: 0; left: 0;}
+  .wrapper div:nth-child(14){top: 200px; left: 0;}
+  .wrapper div:nth-child(15){top: 400px; left: 0;}
+  .wrapper div:nth-child(16){top: 600px; left: 0;}
+  </style>  
+</head>
+<body>
+  <div class="wrapper">
+    <div> 첫번 째 상자 </div>
+    <div> 두번 째 상자 </div>
+    <div> 세번 째 상자 </div>
+    <div> 네번 째 상자 </div>
+    <div> 다섯번 째 상자 </div>
+    <div> 여섯번 째 상자 </div>
+    <div> 일곱번 째 상자 </div>
+    <div> 여덟번 째 상자 </div>
+    <div> 아홉번 째 상자 </div>
+    <div> 열번 째 상자 </div>
+    <div> 열한번 째 상자 </div>
+    <div> 열두번 째 상자 </div>
+    <div> 열세번 째 상자 </div>
+    <div> 열네번 째 상자 </div>
+    <div> 열다섯번 째 상자 </div>
+    <div> 열여섯번 째 상자 </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout</title>
+  <style>
+  .wrapper {width: 800px; height: 800px; overflow: auto; text-align: center; line-height: 200px; font-size:15px; margin:0 auto;}
+  [class^="box"] div {width:200px; height: 200px;}
+  [class^="box"] div:nth-child(1){background: #888;}
+  [class^="box"] div:nth-child(2){background: #aaa;}
+  [class^="box"] div:nth-child(3){background: #ccc;}
+  [class^="box"] div:nth-child(4){background: #eee;}
+  .box01 {width: 25%; float: right;}    
+  .box02 {width: 50%; float: right;}
+      .box02 div{float: left;}
+  .box03 {width: 50%; float: right;}
+      .left-group{float:left;}
+      .right-group{float:right;}
+  .box04 {width: 25%;}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box01">
+      <div> 첫번 째 상자 </div>
+      <div> 두번 째 상자 </div>
+      <div> 세번 째 상자 </div>
+      <div> 네번 째 상자 </div>
+    </div>
+    <div class="box02">
+      <div> 다섯번 째 상자 </div>
+      <div> 여섯번 째 상자 </div>
+      <div> 일곱번 째 상자 </div>
+      <div> 여덟번 째 상자 </div>
+    </div>
+    <div class="box03">
+      <div class="right-group">
+        <div> 아홉번 째 상자 </div>
+        <div> 열번 째 상자 </div>
+      </div>
+      <div class="left-group">
+        <div> 열한번 째 상자 </div>
+        <div> 열두번 째 상자 </div>
+      </div>
+    </div>
+    <div class="box04">
+      <div> 열세번 째 상자 </div>
+      <div> 열네번 째 상자 </div>
+      <div> 열다섯번 째 상자 </div>
+      <div> 열여섯번 째 상자 </div>
+    </div>
+  </div>
+</body>
+</html>
